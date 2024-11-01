@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control</title>
+    <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+    <div class="navbar">
+        <button onclick="showSection('login')">Login</button>
+        <button onclick="showSection('clientes')">Clientes</button>
+        <button onclick="showSection('pedidos')">Pedidos</button>
+        <button onclick="showSection('recorridos')">Recorridos</button>
+    </div>
+
+    <div id="clientes" class="section">
+        <h2>Gestión de Clientes</h2>
+        <form id="formClientes">
+            <input type="text" id="clienteNombre" placeholder="Nombre" required>
+            <input type="text" id="clienteDireccion" placeholder="Dirección" required>
+            <input type="text" id="clienteObservaciones" placeholder="Observaciones">
+            <input type="tel" id="clienteTelefono" placeholder="Teléfono">
+            <button type="submit">Agregar Cliente</button>
+        </form>
+        <table id="tablaClientes">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Dirección</th>
+                    <th>Observaciones</th>
+                    <th>Teléfono</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Filas dinámicas de clientes -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="login" class="section" style="display:none;">
+        <h2>Pantalla de Login</h2>
+        <form id="formLogin">
+            <input type="text" id="loginUsuario" placeholder="Usuario" required>
+            <input type="password" id="loginContraseña" placeholder="Contraseña" required>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
+
+    <div id="pedidos" class="section" style="display:none;">
+        <h2>Gestión de Pedidos</h2>
+        <form id="formPedidos">
+            <select id="pedidoCliente" required>
+                <option value="" disabled selected>Seleccionar Cliente</option>
+            </select>
+            <input type="text" id="pedidoNombre" placeholder="Nombre del Producto" required>
+            <input type="number" id="pedidoCantidad" placeholder="Cantidad" required>
+            <button type="submit">Agregar Pedido</button>
+        </form>
+        <table id="tablaPedidos">
+            <thead>
+                <tr>
+                    <th>Cliente</th>
+                    <th>Nombre del Producto</th>
+                    <th>Cantidad</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Filas dinámicas de pedidos -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="recorridos" class="section" style="display:none;">
+        <h2>Gestión de Recorridos</h2>
+        <form id="formRecorridos">
+            <input type="text" id="recorridoNombre" placeholder="Nombre" required>
+            <input type="text" id="recorridoPedido" placeholder="Pedido" required>
+            <input type="number" id="recorridoDistancia" placeholder="Distancia (km)" required>
+            <input type="time" id="recorridoTiempo" placeholder="Tiempo (h:m)" required>
+            <button type="submit">Agregar Recorrido</button>
+        </form>
+        <table id="tablaRecorridos">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Pedido</th>
+                    <th>Distancia</th>
+                    <th>Horario entrega</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Filas dinámicas de recorridos -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="panel.js"></script>
+</body>
+</html>

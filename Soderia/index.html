@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="Agustinsito">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/typography.css">
+  <title>Los Primos</title>
+</head>
+<body>
+  <header id="header">
+    <div class="header__container">
+     <h4>
+      <object class="icon_boss_header" type="image/svg+xml" data="./images/siphon-of-soda-old-tool-svgrepo-com.svg"></object>
+     </h4>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contactos</a></li>
+          <li><a href="#productos">Servicios</a></li>
+        </ul>
+      </nav>
+      <a class="header__link-button" href="#contact">
+        Contactanos
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="inicio" id="inicio">
+      <div class="inicio__container">
+        <div class="inicio__description">
+          <h1>Soderia-Agua <span class="contrast-text">Los Primos</span></h1>
+        </div>
+        <div class="inicio__illustration">
+          <img class="illustration-exploring" src="./images/Productos/sifon de la empresa.jpg" alt="sifon" >
+        </div>
+      </div>
+    </section>
+
+    <section class="nosotros" id="nosotros">
+      <div class="nosotros__container">
+        <div class="nosotros__description">
+          <h2 class="nosotros__title">¿Quienes somos?</h2>
+          <p>Somos una empresa que viene trabajando con mucha profesionalidad y dedicadesa desde 1980</p>
+          <p>Buscamos brindar el mejor servicio posible y dejar satisfechos a nuestros clientes</p>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <section class="projects" id="projects">
+   
+    </section>
+
+    <section class="contacto" id="contacto">
+      <div class="contacto__container">
+        <h2 class="contacto__title">Contactos</h2>
+        <div class="card">
+          <div class="section-card-one">
+            <object class="icon-boss" type="image/svg+xml" data="./images/boss-manager-judge-svgrepo-com.svg"></object>
+            <h4>Jose Primo</h4>
+          </div>
+          <div class="borde"></div>
+          <ul>
+            <li>+54-3534144233</li>
+            <li>joseprimo@outlook.com</li>
+            <li>Republica de Israel 401 - Villa Maria</li>
+          </ul>
+        </div>
+       
+      </div>
+    </section>
+
+    <section class="productos" id="productos">
+      <h2 class="productos__title">Nuestros Productos</h2>
+      <div class="productos__container">
+
+        <div class="tipos__productos">
+
+          <div class="tipo__producto">
+            <img class="tipo__producto-image" src="./images/Productos/sifon de soda plastico.jpg" alt="Foto de Sifon">
+            <div class="tipo__producto-about">
+              <span class="tipo__producto-name">Sifones</span>
+            </div>
+          </div>
+
+          <div class="tipo__producto">
+            <img class="tipo__producto-image" src="./images/Productos/dispenser de mesa.jfif" alt="Foto de Dispenser de mesa">
+            <div class="tipo__producto-about">
+              <span class="tipo__producto-name">Dispenser de Mesa</span>
+            </div>
+          </div>
+          
+          <div class="tipo__producto">
+            <img class="tipo__producto-image" src="./images/Productos/Dispenser Frio-Calor.png" alt="Foto de Dispenser Frio-Caliente">
+            <div class="tipo__producto-about">
+              <span class="tipo__producto-name">Dispenser Frio-caliente</span>
+            </div>
+          </div>
+
+          <div class="tipo__producto">
+            <img class="tipo__producto-image" src="./images/Productos/bidones de agua.png" alt="Foto de Felipe Almeida">
+            <div class="tipo__producto-about">
+              <span class="tipo__producto-name">Bidones</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__container">
+        <h2 class="contact__title">Contactanos</h2>
+        <form class="contact__form" action="">
+          
+          <div class="contact__double-fields">
+            <div class="contact__field">
+              <label for="contact-name">Nombre</label>
+              <input type="text" name="contact-name" id="contact-name" placeholder="Nombre" required>
+            </div>
+
+            <div class="contact__field">
+              <label for="contact-phone">Telefono</label>
+              <input type="tel" name="contact-phone" id="contact-phone" placeholder="(00) 00000-0000" required>
+            </div>
+          </div>
+
+          <div class="contact__field">
+            <label for="contact-email">Email</label>
+            <input type="email" name="contact-email" id="contact-email" placeholder="ejemplo@email.com" required>
+          </div>
+
+          <div class="contact__field">
+            <label for="contact-message">Mensaje</label>
+            <textarea class="contact__message" name="contact-message" id="contact-message" resizable="none" placeholder="Descripcion" required></textarea>
+          </div>
+
+          <div class="contact__submit">
+            <button class="contact__submit-button" type="submit" name="contact-submit-button" id="contact-submit-button">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="./js/script.js"></script>
+</body>
+</html> 

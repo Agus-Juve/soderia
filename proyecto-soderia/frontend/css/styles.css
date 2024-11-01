@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ac9268a7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Cambiado para centrar en columna */
+  height: 100vh;
+}
+
+.container {
+  background-color: #3fe7c3;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 1000px;
+  margin-bottom: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+  background-color: #3fe7c3;
+  width: 34%;
+  border-radius: 8px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.form-group {
+  flex: 1 1 45%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+  width: 90%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.clientes-table {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+.clientes-table th, .clientes-table td {
+  padding: 10px;
+  border: 1px solid #000000;
+  text-align: center;
+}
+
+.clientes-table th {
+  background-color: #3fe7c3;
+  width: auto;
+}
+
+.clientes-table td {
+  background-color: #1ad0ac;
+  width: auto;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-container button {
+  flex: 1;
+  margin: 0 5px;
+}
